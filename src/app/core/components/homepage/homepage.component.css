@@ -1,0 +1,125 @@
+.hero {
+    background-image: url('../../../../assets/unsplashone.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #f04;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+  
+  .menu,
+  .about
+   {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .menu h2,
+  .about h2,
+  .testimonials h2 {
+    margin-top: 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .menu li {
+    flex: 1;
+  }
+  
+  .menu h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about p {
+    margin-top: 1rem;
+  }
+  
+  .testimonials {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .testimonial-card:before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-bottom: 2rem solid #fff;
+  }
+  
+  .testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-card blockquote {
+    border-left: none;
+    padding-left: 0;
+    margin: 0;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .testimonial-card cite {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1rem;
+  }
+  
+  .testimonial-card .quote {
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #f04;
+  }

@@ -1,0 +1,80 @@
+
+
+.card {
+    height: 80px;
+    margin-bottom: 10px;
+    
+    
+  }
+
+  
+  
+  .card-body {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: #1c3652 2px solid;
+    border-radius: 5px;
+  }
+  
+  .card-title {
+    margin-bottom: 5px;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
+  .btn {
+    margin-left: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* .total-amount-container {
+    width: 90%; 
+    max-width: 800px; 
+    margin: auto; 
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } */
+
+  .total{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .bttm{
+    background-color: rgba(209, 202, 202, 0.436);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width:300px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+  }
+  

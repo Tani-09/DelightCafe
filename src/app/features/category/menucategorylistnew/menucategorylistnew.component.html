@@ -1,0 +1,27 @@
+<!-- <p>menucategorylistnew works!</p>
+<body class="bg">
+<div class="category">
+        <h1>Categories</h1>
+    </div>
+     
+    <div class="categories"  *ngFor="let category of categories">
+       <a [routerLink]="['/productlist']">
+        <img class="b1" src="../../../../assets/productsbg.jpg">
+    </a>
+     
+
+</div>
+</body> -->
+
+
+
+
+<div class="product-container">
+    <div class="product-card" *ngFor="let category of categories">
+        <a  [routerLink]="['/productlist',category.id]">
+            <img src="{{category.imageUrl}}" class="myimg">
+        </a>
+        <div class="product-price">{{category.name}}</div>
+      </div> 
+</div>
+

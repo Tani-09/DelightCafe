@@ -1,0 +1,30 @@
+
+<div *ngFor="let product of productList" class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{product.imageUrl}} class="img-fluid rounded-start" alt="..."  style="width: 120px; height: 120px;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{product.itemName}}</h5>
+          <p class="card-text">Rs. {{product.price}}<br></p>
+          
+          <div class="quantity">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button (click)="onMinusProduct(product.itemId)">-</button>
+            <input type="number" style="width: 45px; align-content: center;"  [(ngModel)]="product.quantity" min="1">
+             <button (click)="onAddProduct(product.itemId)">+</button>&nbsp;
+             </div>
+            <button type="button" class="btn btn-outline-primary"(click)="onRemoveProduct(product.itemId)">Remove</button><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="card-footer" style="margin-left: 13%;">
+        <h4>Amount To Be Paid - Rs.{{getTotalPrice()}}</h4>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a><button type="button"  class="btn btn-danger" [routerLink]="['/address']">Proceed with address</button></a>&nbsp;
+<button type="button"  class="btn btn-danger" (click)="onRemoveCart()">Clear Cart</button><br><br>
+  </div>

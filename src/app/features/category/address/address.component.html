@@ -1,0 +1,28 @@
+
+
+
+<div class="sign-up-container">
+    <h1>Fill Your Address Details:</h1>
+    <form class="sign-up-form" #form="ngForm" (ngSubmit)="onFormSubmit()">
+        <label for="state">State</label>
+      <input type="text" id="state" name="state" class="form-control" [(ngModel)]="model.state" required>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" class="form-control" [(ngModel)]="model.city" required>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" class="form-control" [(ngModel)]="model.pincode" required>
+
+      <label for="staddress">Street Address</label>
+      <input type="text" id="staddress" name="staddress" class="form-control" [(ngModel)]="model.streetAddress" required>
+
+      <label for="landmark">Landmark (optional)</label>
+      <input type="text" id="landmark" name="landmark" class="form-control" [(ngModel)]="model.landmark" >
+
+      <label for="uid">userId</label>
+      <input type="text" id="uid" name="uid" class="form-control" [(ngModel)]="model.userId" >
+
+      <button type="submit" (click)="placedOrder()" >Place Order</button>
+    </form>
+    
+  </div>

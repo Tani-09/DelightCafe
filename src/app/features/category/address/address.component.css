@@ -1,0 +1,71 @@
+.sign-up-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+   
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+   
+  .sign-up-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+   
+  .sign-up-form input[type="text"],
+  .sign-up-form input[type="email"],
+  .sign-up-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+   
+  .sign-up-form button[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+   
+  .sign-up-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+   
+  .already-have-account {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+   
+  .already-have-account a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+   
+  .already-have-account a:hover {
+    text-decoration: underline;
+  }

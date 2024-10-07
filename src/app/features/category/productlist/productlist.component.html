@@ -1,0 +1,59 @@
+<!-- 
+   <h1 class="mt-3">Product List</h1>
+   <div class="d-flex justify-content-end">
+    <a [routerLink]="['/addproduct']" class="btn btn-primary">Add Product</a>
+   </div> -->
+
+
+   <!-- <div class="container">
+    <ng-container *ngIf="products">
+    
+    <div class="product-container">
+        <div class="product-card" *ngFor="let product of products">
+        <div>{{product.itemName}}</div>
+          <div class="product-price">{{product.price}}</div>
+          <div class="product-description">{{product.description}}</div>
+          <div class="product-actions">
+            <button >+</button>
+            <button >-</button>
+          </div>
+        </div>
+      </div>
+    
+    </ng-container>
+    
+    </div> -->
+
+
+   
+    <div class="product-container">
+        <div class="product-card" *ngFor="let product of products">
+            <img src="{{product.imageUrl}}" class="myimg">
+
+            <div class="contentdiv">
+            <div class="product-name">{{product.itemName}}</div>
+            <div class="product-price">Rs.{{product.price}}</div>
+            <div class="product-description">{{product.description}}</div>
+            <div class="product-buttons">
+                
+                <button (click)="addToCart(product.itemId)" class="add-to-cart">Add Product</button>
+                <!-- <p>{{DisplayLength(product.itemId)}}</p>
+                <button (click)="removeFromCart(product.itemId)" class="remove-from-cart">-</button> -->
+            </div>
+          </div>
+
+          </div>
+          
+        </div>
+      
+
+       
+         
+
+
+
+
+
+
+
+  

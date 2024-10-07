@@ -1,0 +1,71 @@
+<!-- <body>
+    <div class="container mt-5">
+        
+ 
+
+        <div *ngFor="let item of cartProducts" class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.itemName }}</h5>
+                        <p class="card-text">{{ item.price }}</p>
+                        <p>{{DisplayLength(item.itemId)}}</p>
+                        <button class="btn btn-primary" onclick="addtocart('Product 1', 50)">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+ 
+        
+        <div class="mt-4">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <h4>{{getTotalPrice()}}</h4>
+        </div>
+    </div>
+ 
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@types/bootstrap@4.5.2/dist/umd/index.d.ts"></script>
+    <script src="cart.js"></script>
+</body> -->
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card" *ngFor="let item of groupedData" class="row">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <img src="{{ item[0].imageUrl }}" alt="{{ item[0].itemName }}" class="img-fluid" style="width: 100px; height: 100px;">
+              </div>
+              <div class="text-center">
+                <h5 class="card-title">
+                  {{ item[0].itemName }}
+                </h5>
+                <p class="card-text">₹{{ item[0].price }}</p>
+              </div>
+              <div>
+                <button (click)="addToCart(item)" class="add-to-cart">+</button>
+                <p>{{item.length}}</p>
+                <button (click)="removeFromCart(item[0].itemId)" class="remove-from-cart">-</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total-amount-container mt-4 d-flex justify-content-center"  class="bttm"> <!-- Added container for total amount -->
+      <h2 class="total"> Total Amount to be paid: ₹{{ getTotalPrice() }}</h2>
+      <a><button [routerLink]="['/address']">Proceed with address</button></a>
+    </div>
+  </div>
+
+
+
+
+

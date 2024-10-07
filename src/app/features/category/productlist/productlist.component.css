@@ -1,0 +1,146 @@
+
+
+
+
+  /* .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  background-color: aliceblue;
+ 
+  justify-content: space-evenly;
+}
+
+.myimg{
+  width:80%;
+ 
+}
+
+.product-card {
+ 
+
+  width: 300px;
+
+  padding: 30px; 
+  margin-bottom: 30px; 
+  background-color: rgba(209, 203, 205, 0.626);
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#040404;
+}
+
+.product-name {
+  margin-top: 6px;
+  font-size: 18px; 
+  
+ 
+}
+
+.product-price {
+  font-size: 14px;
+  color: #040404;
+}
+
+.product-description {
+  margin-top: 10px;
+  font-size: 12px; 
+  color: #040404;
+}
+
+.product-actions {
+  margin-top: 20px; 
+}
+
+.product-buttons{
+
+  margin-top: 4px;
+  justify-content: space-evenly;
+  display: flex;
+
+  
+}
+
+button{
+  background-color:  rgba(77, 84, 77, 0);
+  margin:3px;
+  border-radius: 4px;
+} */
+
+
+
+
+/* new */
+
+
+
+
+.product-container {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjust the minmax width */
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust the width */
+}
+
+.myimg {
+  width: 100%;
+  height: 120px; /* Adjust the height */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.contentdiv {
+  padding: 15px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.product-price {
+  font-size: 1em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.product-description {
+  color: #888;
+  margin-top: 10px;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.add-to-cart,
+.remove-from-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 6px 10px; /* Adjust padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+  background-color: #0056b3;
+}
